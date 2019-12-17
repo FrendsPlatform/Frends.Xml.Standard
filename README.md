@@ -11,7 +11,8 @@
    - [License](#license)
    
 # Frends.Xml.Standard
-FRENDS XML processing tasks.
+FRENDS XML.Standard processing tasks.
+This version supports .NET Standard which has only xpath version 1 support for now.  
 
 ## Installing
 You can install the task via FRENDS UI Task view, by searching for packages. You can also download the latest NuGet package from https://www.myget.org/feed/frends/package/nuget/Frends.Xml.Standard and import it manually via the Task view.

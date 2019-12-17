@@ -10,6 +10,7 @@
 
   <PropertyGroup>
     <DocumentationFile>C:\projects\Frends.Xml.Standard\Frends.Xml.Standard\Frends.Xml.Standard.xml</DocumentationFile>
+    <Description>This version supports .NET Standard which has only xpath version 1 support for now.</Description>
   </PropertyGroup>
 
   <ItemGroup>
