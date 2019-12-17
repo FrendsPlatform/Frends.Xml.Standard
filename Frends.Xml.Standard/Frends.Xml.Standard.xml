@@ -19,11 +19,6 @@
             Throw an exception if no results returned by query
             </summary>
         </member>
-        <member name="P:Frends.Xml.Standard.QueryOptions.XpathVersion">
-            <summary>
-            XPath Query language version
-            </summary>
-        </member>
         <member name="P:Frends.Xml.Standard.TransformInput.Xml">
             <summary>
             Source to transform

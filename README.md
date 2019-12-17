@@ -46,7 +46,7 @@ NOTE: Be sure to merge the latest from "upstream" before making a pull request!
 ## Documentation
 
 ### Xml.Standard.XpathQuery
-Query XML with XPath and return a list of results.
+Query XML with XPath (version 1) and return a list of results.
 
 #### Input
 
@@ -60,7 +60,7 @@ Query XML with XPath and return a list of results.
 | Property                 | Type             | Description                                    |
 |--------------------------|------------------|------------------------------------------------|
 | ThrowErrorOnEmptyResults | bool             | Task will throw an exception if no results found |
-| XpathVersion             | Enum{V1} | Select the XPath version for the query |
+
 
 #### Result
 
@@ -73,7 +73,7 @@ Query XML with XPath and return a list of results.
 
 ### Xml.Standard.XpathQuerySingle
 
-Query XML with XPath and return a single result.
+Query XML with XPath (version 1) and return a single result.
 
 #### Input
 
@@ -87,7 +87,7 @@ Query XML with XPath and return a single result.
 | Property                 | Type             | Description                                    |
 |--------------------------|------------------|------------------------------------------------|
 | ThrowErrorOnEmptyResults | bool             | Task will throw an exception if no results found |
-| XpathVersion             | Enum{V1} 		  | Select the XPath version for the query |
+
 
 #### Result
 

@@ -23,8 +23,7 @@ namespace Frends.Xml.Standard
         public string XpathQuery { get; set; }
     }
 
-    //public enum XPathVersion { V1 }
-    public enum XPathVersion { V1 }
+
     public class QueryOptions
     {
 
@@ -34,10 +33,7 @@ namespace Frends.Xml.Standard
         [DefaultValue("true")]
         public bool ThrowErrorOnEmptyResults { get; set; } = true;
 
-        /// <summary>
-        /// XPath Query language version
-        /// </summary>
-        public XPathVersion XpathVersion { get; set; }
+       
     }
     
    
@@ -87,7 +83,6 @@ namespace Frends.Xml.Standard
         {
             return  _data.Value.ToString();
         }
-
        
     }
 

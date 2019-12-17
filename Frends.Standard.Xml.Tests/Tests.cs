@@ -117,7 +117,7 @@ namespace Frends.Standard.Xml.Tests
         public void TestXPathQuerySingleNoResultsFoundDontThrow()
         {
             const string xPath = "/bookstore/book/price/things";
-            var res = Frends.Xml.Standard.Xml.XpathQuerySingle(new QueryInput() { Xml = Xml, XpathQuery = xPath }, new QueryOptions() { ThrowErrorOnEmptyResults = false, XpathVersion = XPathVersion.V1 });
+            var res = Frends.Xml.Standard.Xml.XpathQuerySingle(new QueryInput() { Xml = Xml, XpathQuery = xPath }, new QueryOptions() { ThrowErrorOnEmptyResults = false });
 
             Assert.That(res.Data, Is.Null);
             Assert.That(res.ToJson(), Is.EqualTo(null));
