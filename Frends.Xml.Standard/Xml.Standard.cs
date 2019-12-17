@@ -176,19 +176,22 @@ namespace Frends.Xml.Standard
             var oldDocument = XDocument.Parse(input.Xml);
             var xsltArgumentList = new XsltArgumentList();
             input.XsltParameters?.ToList().ForEach(x => xsltArgumentList.AddParam(x.Name, string.Empty, x.Value));
-
+           
 
             using (var stringReader = new StringReader(input.Xslt))
             {
                 using (var xsltReader = XmlReader.Create(stringReader))
                 {
+                    // Create the XsltSettings object with script enabled.
+                    var settings = new XsltSettings(false, true);
                     var transformer = new XslCompiledTransform();
-                    transformer.Load(xsltReader);
+                    
+                    transformer.Load(xsltReader, settings ,new XmlUrlResolver());
                     using (var oldDocumentReader = oldDocument.CreateReader())
                     {
 
-                        using (var newDocument = new MemoryStream())
-                        {
+                        using (var newDocument = new MemoryStream()){
+
                             transformer.Transform(oldDocumentReader, xsltArgumentList, newDocument);
 
                             newDocument.Position = 0;
