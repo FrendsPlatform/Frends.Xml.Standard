@@ -31,9 +31,6 @@ Run Tests with nunit3. Tests can be found under
 
 `Frends.Xml.Standard\Frends.Standard.Xml.Tests\bin\Release\netcoreapp3.0\Frends.Standard.Xml.Tests.dll`
 
-Create a nuget package
-
-`nuget pack nuspec/Frends.Xml.nuspec`
 
 ## Contributing
 When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
@@ -63,7 +60,7 @@ Query XML with XPath and return a list of results.
 | Property                 | Type             | Description                                    |
 |--------------------------|------------------|------------------------------------------------|
 | ThrowErrorOnEmptyResults | bool             | Task will throw an exception if no results found |
-| XpathVersion             | Enum{V3, V2, V1} | Select the XPath version for the query |
+| XpathVersion             | Enum{V1} | Select the XPath version for the query |
 
 #### Result
 
