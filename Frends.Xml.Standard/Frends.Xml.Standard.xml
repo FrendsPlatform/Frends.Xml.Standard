@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Frends.Xml.Standard</name>
+    </assembly>
+    <members>
+        <member name="P:Frends.Xml.Standard.QueryInput.Xml">
+            <summary>
+            XML to be queried
+            </summary>
+        </member>
+        <member name="P:Frends.Xml.Standard.QueryInput.XpathQuery">
+            <summary>
+            The XPath Query
+            </summary>
+        </member>
+        <member name="P:Frends.Xml.Standard.QueryOptions.ThrowErrorOnEmptyResults">
+            <summary>
+            Throw an exception if no results returned by query
+            </summary>
+        </member>
+        <member name="P:Frends.Xml.Standard.TransformInput.Xml">
+            <summary>
+            Source to transform
+            </summary>
+        </member>
+        <member name="P:Frends.Xml.Standard.TransformInput.Xslt">
+            <summary>
+            Xslt transformation
+            </summary>
+        </member>
+        <member name="P:Frends.Xml.Standard.TransformInput.XsltParameters">
+            <summary>
+            Xslt parameters
+            </summary>
+        </member>
+        <member name="P:Frends.Xml.Standard.JsonToXmlInput.Json">
+            <summary>
+            Json string to be converted to XML
+            </summary>
+        </member>
+        <member name="P:Frends.Xml.Standard.JsonToXmlInput.XmlRootElementName">
+            <summary>
+            The name for the root XML element
+            </summary>
+        </member>
+        <member name="P:Frends.Xml.Standard.ValidationInput.Xml">
+            <summary>
+            Input must be of type string or XmlDocument
+            </summary>
+        </member>
+        <member name="P:Frends.Xml.Standard.ValidationInput.XsdSchemas">
+            <summary>
+            List of XML Schema Definitions
+            </summary>
+        </member>
+        <member name="P:Frends.Xml.Standard.ValidationOptions.ThrowOnValidationErrors">
+            <summary>
+            Throw exception on validation error.
+            </summary>
+        </member>
+        <member name="T:Frends.Xml.Standard.Xml">
+            <summary>
+            See:  https://github.com/FrendsPlatform/Frends.Xml.Standard
+            </summary>
+        </member>
+        <member name="M:Frends.Xml.Standard.Xml.XpathQuery(Frends.Xml.Standard.QueryInput,Frends.Xml.Standard.QueryOptions)">
+            <summary>
+            Query XML with XPath and return a list of results. See: https://github.com/FrendsPlatform/Frends.Xml.Standard
+            </summary>
+            <returns>Object { List &lt;object&gt; Data, List&lt;JToken&gt; ToJson(),JToken ToJson(int index) }</returns>
+        </member>
+        <member name="M:Frends.Xml.Standard.Xml.XpathQuerySingle(Frends.Xml.Standard.QueryInput,Frends.Xml.Standard.QueryOptions)">
+            <summary>
+            Query XML with XPath and return a single result. See: https://github.com/FrendsPlatform/Frends.Xml.Standard
+            </summary>
+            <returns>Object { object Data, JToken ToJson() } </returns>
+        </member>
+        <member name="M:Frends.Xml.Standard.Xml.ConvertJsonToXml(Frends.Xml.Standard.JsonToXmlInput)">
+            <summary>
+            Convert JSON string to XML string. See: https://github.com/FrendsPlatform/Frends.Xml.Standard
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="M:Frends.Xml.Standard.Xml.Validate(Frends.Xml.Standard.ValidationInput,Frends.Xml.Standard.ValidationOptions)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <param name="options"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Frends.Xml.Standard.Xml.ValidateXmlDocument(System.Xml.XmlDocument,System.Collections.Generic.IEnumerable{System.String},Frends.Xml.Standard.ValidationOptions)">
+            <summary>
+            Validate XML against XML Schema Definitions. See: https://github.com/FrendsPlatform/Frends.Xml.Standard
+            </summary>
+            <returns>Object { bool IsValid, string Error } </returns>
+        </member>
+        <member name="M:Frends.Xml.Standard.Xml.Transform(Frends.Xml.Standard.TransformInput)">
+            <summary>
+            Create a XSLT transformation. See: https://github.com/FrendsPlatform/Frends.Xml.Standard
+            </summary>
+            <returns>string</returns>
+        </member>
+    </members>
+</doc>

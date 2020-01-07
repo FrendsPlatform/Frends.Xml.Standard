@@ -1,0 +1,19 @@
+﻿{
+  "Tasks": [
+    {
+      "TaskMethod": "Frends.Xml.Standard.Xml.XpathQuery"
+    },
+    {
+      "TaskMethod": "Frends.Xml.Standard.Xml.XpathQuerySingle"
+    },
+    {
+      "TaskMethod": "Frends.Xml.Standard.Xml.Transform"
+    },
+    {
+      "TaskMethod": "Frends.Xml.Standard.Xml.Validate"
+    },
+    {
+      "TaskMethod": "Frends.Xml.Standard.Xml.ConvertJsonToXml"
+    }
+  ]
+}
