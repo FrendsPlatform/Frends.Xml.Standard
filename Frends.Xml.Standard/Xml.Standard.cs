@@ -112,11 +112,9 @@ namespace Frends.Xml.Standard
         }
 
         /// <summary>
-        /// 
+        /// Validate XML against XML Schema Definitions. See: https://github.com/FrendsPlatform/Frends.Xml.Standard
         /// </summary>
-        /// <param name="input"></param>
-        /// <param name="options"></param>
-        /// <returns></returns>
+        /// <returns>Object { bool IsValid, string Error } </returns>
         public static ValidateResult Validate([PropertyTab]ValidationInput input, [PropertyTab]ValidationOptions options)
         {
             var s = input.Xml as string;
@@ -135,10 +133,7 @@ namespace Frends.Xml.Standard
 
             throw new InvalidDataException("The input data was not recognized as XML. Supported formats are XML string and XMLDocument.");
         }
-        /// <summary>
-        /// Validate XML against XML Schema Definitions. See: https://github.com/FrendsPlatform/Frends.Xml.Standard
-        /// </summary>
-        /// <returns>Object { bool IsValid, string Error } </returns>
+
         private static ValidateResult ValidateXmlDocument(XmlDocument xmlDocument, IEnumerable<string> inputXsdSchemas, ValidationOptions options)
         {
             var validateResult = new ValidateResult() { IsValid = true };

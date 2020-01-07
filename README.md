@@ -1,4 +1,4 @@
-- [Frends.Xml].Standard(#frends.xml.standard)
+- [Frends.Xml.Standard](#frends.xml.standard)
    - [Installing](#installing)
    - [Building](#building)
    - [Contributing](#contributing)
