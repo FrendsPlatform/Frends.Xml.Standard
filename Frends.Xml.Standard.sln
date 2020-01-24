@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Frends.Xml.Standard", "Frends.Xml.Standard\Frends.Xml.Standard.csproj", "{8D39D1C8-9DB6-4A45-A3E0-AEE72DC21412}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Frends.Xml.Standard.Tests", "Frends.Xml.Standard.Test\Frends.Xml.Standard.Tests.csproj", "{B7BF7BD6-5B2C-4138-8A9F-2CCF10F46585}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Frends.Xml.Standard.Tests", "Frends.Xml.Standard.Tests\Frends.Xml.Standard.Tests.csproj", "{B7BF7BD6-5B2C-4138-8A9F-2CCF10F46585}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
