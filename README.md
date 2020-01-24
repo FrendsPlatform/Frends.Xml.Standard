@@ -1,23 +1,35 @@
-- [Frends.Xml].Standard(#frends.xml.standard)
-   - [Installing](#installing)
-   - [Building](#building)
-   - [Contributing](#contributing)
-   - [Documentation](#documentation)
-     - [Xml.XpathQuery](#xmlxpathquery) 
-     - [Xml.XpathQuerySingle](#xmlxpathquerysingle)
-     - [Xml.Transform](#xmltransform)
-     - [Xml.Validate](#xmlvalidate)
-     - [Xml.ConvertJsonToXml](#xmlconvertjsontoxml)
-   - [License](#license)
-   
+- [Frends.Xml.Standard](#frendsxmlstandard)
+  - [Installing](#installing)
+  - [Building](#building)
+  - [Contributing](#contributing)
+  - [Documentation](#documentation)
+    - [Xml.Standard.XpathQuery](#xmlstandardxpathquery)
+      - [Input](#input)
+      - [Options](#options)
+      - [Result](#result)
+    - [Xml.Standard.XpathQuerySingle](#xmlstandardxpathquerysingle)
+      - [Input](#input-1)
+      - [Options](#options-1)
+      - [Result](#result-1)
+    - [Xml.Standard.Transform](#xmlstandardtransform)
+      - [Input](#input-2)
+      - [Result](#result-2)
+    - [Xml.Standard.ConvertJsonToXml](#xmlstandardconvertjsontoxml)
+      - [Input](#input-3)
+      - [Result](#result-3)
+  - [License](#license)
+
 # Frends.Xml.Standard
-FRENDS XML.Standard processing tasks.
-This version supports .NET Standard which has only xpath version 1 support for now.  
+
+FRENDS XML processing Tasks compatible with .NET Standard.
+This version supports .NET Standard which has only XPath and XSLT version 1 support for now because no there is no library or built-in support for v2 and v3.
 
 ## Installing
+
 You can install the task via FRENDS UI Task view, by searching for packages. You can also download the latest NuGet package from https://www.myget.org/feed/frends/package/nuget/Frends.Xml.Standard and import it manually via the Task view.
 
 ## Building
+
 Clone a copy of the repo
 
 `git clone https://github.com/FrendsPlatform/Frends.Xml.Standard.git`
@@ -30,10 +42,10 @@ Rebuild the project
 
 Run Tests with nunit3. Tests can be found under
 
-`Frends.Xml.Standard\Frends.Standard.Xml.Tests\bin\Release\netcoreapp3.0\Frends.Standard.Xml.Tests.dll`
-
+`Frends.Xml.Standard\Frends.Xml.Standard.Tests\bin\Release\netcoreapp3.0\Frends.Xml.Standard.Tests.dll`
 
 ## Contributing
+
 When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
 
 1. Fork the repo on GitHub
@@ -47,6 +59,7 @@ NOTE: Be sure to merge the latest from "upstream" before making a pull request!
 ## Documentation
 
 ### Xml.Standard.XpathQuery
+
 Query XML with XPath (version 1) and return a list of results.
 
 #### Input
@@ -68,9 +81,8 @@ Query XML with XPath (version 1) and return a list of results.
 | Property/Method   | Type           | Description                 |
 |-------------------|----------------|-----------------------------|
 | Data              | List<object>   | List of query results. Object type depends on the query. If selecting a node the type will be string and contain the xml node.  |
-| ToJson()          | List<JToken>   | Returns a Json representation of the xml data. It is possible to access this date by dot notation. `#result.ToJson()[0].Foo.Bar` |
-| ToJson(int index) | JToken         | Returns a single result as Json  |
-
+| ToJson()          | List<JToken>   | Returns a JSON representation of the xml data. It is possible to access this date by dot notation. `#result.ToJson()[0].Foo.Bar` |
+| ToJson(int index) | JToken         | Returns a single result as JSON  |
 
 ### Xml.Standard.XpathQuerySingle
 
@@ -95,7 +107,7 @@ Query XML with XPath (version 1) and return a single result.
 | Property/Method   | Type           | Description                 |
 |-------------------|----------------|-----------------------------|
 | Data              | object         | Object type depends on the query. If selecting a node the type will be string and contain the xml node.  |
-| ToJson()          | JToken         | Returns a Json representation of the xml data. It is possible to access this date by dot notation. `#result.ToJson().Foo.Bar` |
+| ToJson()          | JToken         | Returns a JSON representation of the xml data. It is possible to access this date by dot notation. `#result.ToJson().Foo.Bar` |
 
 ### Xml.Standard.Transform 
 
