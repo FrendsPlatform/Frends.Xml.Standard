@@ -4,6 +4,10 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
 
     <IsPackable>false</IsPackable>
+
+    <AssemblyName>Frends.Xml.Standard.Tests</AssemblyName>
+
+    <RootNamespace>Frends.Xml.Standard.Tests</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
