@@ -119,24 +119,24 @@ Because valid XML must have one root element, the JSON passed to the task should
 
 Example input json: 
 ```json
-@"{
-  '?xml': {
-    '@version': '1.0',
-    '@standalone': 'no'
+{
+  "?xml": {
+    "@version": "1.0",
+    "@standalone": "no"
   },
-  'root': {
-    'person': [
+  "root": {
+    "person": [
       {
-        '@id': '1',
-        'name': 'Alan'
+        "@id": "1",
+        "name": "Alan"
       },
       {
-        '@id': '2',
-        'name': 'Louis'
+        "@id": "2",
+        "name": "Louis"
       }
     ]
   }
-"
+}
 ````
 
 Example result:
